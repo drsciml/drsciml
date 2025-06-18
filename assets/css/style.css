@@ -320,7 +320,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 #hero {
   width: 100%;
   height: 75vh;
-  background: url("../img/operator.png") center center no-repeat;
+  background: url("assets/img/operator.png") center center no-repeat;
   background-size: contain;
   position: relative;
   /* background-repeat: no-repeat; */
