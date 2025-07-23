@@ -644,6 +644,18 @@ section {
   padding: 60px 0;
 }
 
+/*--------------------------------------------------------------
+# Frequently Asked Questions
+--------------------------------------------------------------*/
+
+#talks ul {
+  list-style-type: disc;
+  padding-left: 150px;
+}
+
+#talks li {
+  margin-bottom: 20px;
+}
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions
