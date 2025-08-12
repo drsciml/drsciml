@@ -941,4 +941,79 @@ section {
   color: #fff;
 }
 
+/*--------------------------------------------------------------
+# Timeline container
+--------------------------------------------------------------*/
+
+.timeline-day {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 30px;
+  border-left: 3px solid #70b9b0;
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: #70b9b0;
+  margin-bottom: 20px;
+}
+
+/* Each event */
+.timeline-event {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+/* Dots on the line */
+.timeline-event::before {
+  content: "";
+  position: absolute;
+  left: -37.5px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: #70b9b0;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+/* Time and description */
+.time {
+  font-weight: bold;
+  display: block;
+  color: #333;
+}
+
+.desc {
+  color: #555;
+}
+
+.timeline-event a {
+  color: #70b9b0;
+  text-decoration: none;
+}
+
+.timeline-event a:hover {
+  text-decoration: underline;
+}
+
+/* Talk & Plenary styles */
+.timeline-event.talk,
+.timeline-event.plenary {
+  background: rgba(112, 185, 176, 0.08);
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+.timeline-event.plenary {
+  border-left: 4px solid #70b9b0;
+  font-weight: bold;
+}
+
+/* Break & Meal styles */
+.timeline-event.break {
+  color: #666;
+  font-style: italic;
+}
 
