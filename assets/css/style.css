@@ -1011,6 +1011,52 @@ section {
   font-weight: bold;
 }
 
+/* === Talks === */
+.talk .talk-speaker {
+  font-weight: 500;
+  font-size: 1.05em;
+  color: #444;
+}
+
+.talk .talk-title {
+  font-style: italic;
+  font-size: 0.95em;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.talk .title-label {
+  font-weight: 600;
+  color: #333;
+  font-style: normal;
+  margin-right: 4px;
+}
+
+.talk .toggle-abstract {
+  background: none;
+  border: none;
+  color: #70b9b0;
+  cursor: pointer;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+.talk .toggle-abstract:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.talk .abstract {
+  display: none;
+  margin-top: 8px;
+  padding: 10px;
+  border-left: 3px solid #ddd;
+  background: #fafafa;
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: #333;
+}
+
 /* Break & Meal styles */
 .timeline-event.break {
   color: #666;

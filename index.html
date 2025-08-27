@@ -34,6 +34,18 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 </head>
 
 <body>
@@ -279,7 +291,25 @@
 
           <div class="timeline-event talk">
             <span class="time">11:30 - 12:00 BST</span>
-            <span class="desc">Talk - <a href="javascript:void(0)">Niklas Reinhardt</a></span>
+            <span class="desc"></span>
+              <div class="talk-speaker">
+                Talk - <a href="javascript:void(0)">Niklas Reinhardt</a>
+              </div>
+              <div class="talk-title">
+                <span class="title-label">Title:</span> Bayesian Operator Learning
+              </div>
+              <button class="toggle-abstract">Show Abstract</button>
+              <div class="abstract">
+                <p>
+                  We discuss a Bayesian framework for learning non-linear mappings in infinite-dimensional spaces. Given
+                  a map $g_0:\mathcal{X}\to\mathcal{Y}$ between two separable Hilbert spaces, we study recovery of $g_0$ from $n\in\mathbb{N}$ noisy
+                  input-output pairs $(\pmb{x},\pmb{y})=(X_i,Y_i)_{i=1}^n$ with $Y_i = g_0 (X_i ) + E_i$ ; here the $X_i\in\mathcal{X}$ represent randomly drawn
+                  'design' points, and the $E_i$ are assumed to be i.i.d. draws from a Gaussian white noise process indexed by $\mathcal{Y}$. Choosing a suitable
+                  'operator-valued' prior $\Pi_0$, we show well-posedness of the posterior $G|(\pmb{X},\pmb{Y})$ and establish convergence
+                  rates for the posterior mean towards the ground truth in terms of the data size $n$.
+                </p>
+              </div>
+            </span>
           </div>
 
           <div class="timeline-event break">
@@ -339,8 +369,25 @@
 
           <div class="timeline-event talk">
             <span class="time">11:00 - 11:30 BST</span>
-            <span class="desc">Talk - <a href="javascript:void(0)">Benno Huber</a></span>
+            <div class="desc">
+              <div class="talk-speaker">
+                Talk - <a href="javascript:void(0)">Benno Huber</a>
+              </div>
+              <div class="talk-title">
+                <span class="title-label">Title:</span> Low-rank surrogates for parametric PDEs
+              </div>
+              <button class="toggle-abstract">Show Abstract</button>
+              <div class="abstract">
+                <p>
+                  Mathematically, operator surrogates provide approximations of mappings between infinite dimensional spaces. We analyze an encoder-decoder framework, where the input and output function spaces are parametrized using coefficient sequences of admissable representation systems.
+                  The goal then becomes to approximate a coefficient-to-coefficient map, which can be realized using various approximation tools.
+                  In the present work we focus on low-rank tensor representation using the tensor-train (TT) format. This format allows for efficient storage, evaluation and basic linear algebra as long as the tensor ranks remain low.
+                  We show approximation rates with regards to the storage complexity of such TT surrogates for certain holomorphic maps by providing rank bounds. Furthermore, we draw comparisons to other approximation tools such as neural networks and sparse polynomial interpolation.
+                </p>
+              </div>
+            </div>
           </div>
+
 
           <div class="timeline-event talk">
             <span class="time">11:30 - 12:00 BST</span>
@@ -705,6 +752,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script src="assets/js/abstract.js"></script>
 
 </body>
 
