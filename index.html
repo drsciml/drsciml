@@ -288,7 +288,7 @@
 
           <div class="timeline-event talk">
             <span class="time">11:30 - 12:00 BST</span>
-            <span class="desc"></span>
+            <span class="desc">
               <div class="talk-speaker">
                 Talk - <a href="javascript:void(0)">Niklas Reinhardt</a>
               </div>
@@ -326,7 +326,22 @@
 
           <div class="timeline-event talk">
             <span class="time">15:00 - 15:30 BST</span>
-            <span class="desc">Talk - <a href="https://romit-maulik.github.io/index.html" target="_blank">Romit Maulik (online)</a></span>
+            <span class="desc">
+              <div class="talk-speaker">
+                Talk - <a href="https://romit-maulik.github.io/index.html" target="_blank">Romit Maulik (online)</a>
+              </div>
+              <div class="talk-title">
+                <span class="title-label">Title:</span> Scalable, adaptive, and explainable geometric deep learning with applications to computational physics
+              </div>
+              <button class="toggle-abstract">Show Abstract</button>
+              <div class="abstract">
+                <p>
+                  This work introduces an interpretable graph neural network (GNN) autoencoding framework for surrogate modeling of unstructured mesh fluid dynamics. The approach addresses two key challenges: latent space interpretability and compatibility with unstructured meshes. Interpretability is achieved through an adaptive graph reduction procedure that performs flowfield-conditioned node sampling, yielding masked fields that (i) localize latent activity in physical space, (ii) track the evolution of unsteady flow features such as recirculation zones and shear layers, and (iii) identify sub-graphs most relevant to forecasting. Compatibility with unstructured meshes is ensured through multi-scale message passing (MMP) layers, which extend standard message passing with learnable coarsening operations to efficiently reconstruct flowfields across multiple lengthscales. 
+                  A regularization procedure further enhances interpretability by enabling error-tagging, i.e., the identification of nodes most associated with forecasting uncertainty. Demonstrations are conducted on large-eddy simulation data of backward-facing step flows at high Reynolds numbers, with extrapolations to ramp and wall-mounted cube configurations. 
+                  The result is a new class of GNN autoencoders that combine predictive accuracy with physics-informed insight into both flow structures and model reliability.
+                </p>
+              </div>
+            </span>
           </div>
 
           <div class="timeline-event break">
@@ -366,7 +381,7 @@
 
           <div class="timeline-event talk">
             <span class="time">11:00 - 11:30 BST</span>
-            <div class="desc">
+            <span class="desc">
               <div class="talk-speaker">
                 Talk - <a href="javascript:void(0)">Benno Huber</a>
               </div>
@@ -382,7 +397,7 @@
                   We show approximation rates with regards to the storage complexity of such TT surrogates for certain holomorphic maps by providing rank bounds. Furthermore, we draw comparisons to other approximation tools such as neural networks and sparse polynomial interpolation.
                 </p>
               </div>
-            </div>
+            </span>
           </div>
 
 
